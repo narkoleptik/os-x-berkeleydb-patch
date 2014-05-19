@@ -27,7 +27,7 @@ make: *** [mut_tas.lo] Error 1
 1. <pre><code>cd db-5.3.21/</code></pre>
 
 ### We need to patch the code to make it compile on Xcode 4.6
-1. <pre><code>curl -O https://raw.github.com/narkoleptik/os-x-berkeleydb-patch/master/atomic.patch</code></pre>
+1. <pre><code>curl -OL https://raw.github.com/narkoleptik/os-x-berkeleydb-patch/master/atomic.patch</code></pre>
 1. <pre><code>patch src/dbinc/atomic.h < atomic.patch</code></pre>
 
 ### Back to building BerkeleyDB
